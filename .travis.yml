@@ -12,5 +12,5 @@ before_install:
 install:
   - docker run -e CI=true harrisleesh/docker-react-app npm run test -- --coverage
 
-after-install:
+after_install:
   - echo "after creating an image with dockerfile"
